@@ -17,7 +17,7 @@ int main() {
     map<string, double> params;
     vector<string> imgPath;
 
-    getFiles("/home/satya/Downloads/root_data/root_data/rootB/*.png", imgPath);
+    getFiles("/home/satya/Downloads/root_data/root_data/rootA/*.png", imgPath);
  
     // getFiles("/media/ros/Workshop/ws/Datasets/cityscapes/leftImage/"
     //          "val/*/*.png", imgPath);
@@ -38,7 +38,7 @@ int main() {
     uniform_int_distribution<int> random_psi(30, 45);
     uniform_int_distribution<int> random_dia(4, 5);   // blur kernel size
 
-    string savePath{"/home/satya/Downloads/synB/"};
+    string savePath{"/home/satya/Downloads/syn/"};
 
 
     for(int index{0}; index < totalIndex; ++index) {
